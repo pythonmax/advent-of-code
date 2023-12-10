@@ -3,7 +3,7 @@ package y2023
 import resourceAsFile
 
 fun main() {
-    val games = resourceAsFile("y2023/day2-input-test.txt").readLines()
+    val games = resourceAsFile("y2023/day02-input-test.txt").readLines()
         .map { game -> game.split(": ")[1].split("; ") }
         .map { sets -> sets.map { set -> set.split(", ").map { it.split(" ").let { (i, c) -> c to i.toInt() }}}}
 

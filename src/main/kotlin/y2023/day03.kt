@@ -13,7 +13,7 @@ fun main() {
         sym.x in (num.second.x - 1)..(num.second.x + num.first.length)
                 && sym.y in (num.second.y - 1)..(num.second.y + 1)
 
-    val input = resourceAsFile("y2023/day3-input-test.txt").readLines()
+    val input = resourceAsFile("y2023/day03-input-test.txt").readLines()
 
     val symbols = parse(input, "[^.0-9]")
     val numbers = parse(input, "[0-9]+")

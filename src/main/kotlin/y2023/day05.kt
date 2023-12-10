@@ -30,7 +30,7 @@ fun main() {
 
     fun parseRange(line: String) = line.toLongList().let { (dst, src, size) -> Rng(src, size, dst - src) }
 
-    val input = resourceAsFile("y2023/day5-input-test.txt").readLines()
+    val input = resourceAsFile("y2023/day05-input-test.txt").readLines()
 
     val seeds = input.first().split(": ").last().toLongList()
     val mapping = input

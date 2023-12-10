@@ -9,7 +9,7 @@ fun main() {
         .map { it.toInt() }
         .toSet()
 
-    val input = resourceAsFile("y2023/day4-input.txt").readLines()
+    val input = resourceAsFile("y2023/day04-input.txt").readLines()
         .map { row -> row.split(": ").last().split(" | ").map(::toSet) }
         .map { (winners, actual) -> actual.intersect(winners).size }
 

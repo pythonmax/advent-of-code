@@ -12,7 +12,7 @@ fun main() {
             .joinToString("") { if (it.length == 1) it else (1 + words.indexOf(it)).toString() }
     }
 
-    val r = resourceAsFile("y2023/day1-input.txt").readLines()
+    val r = resourceAsFile("y2023/day01-input.txt").readLines()
         .map { processLine(it) }
         .sumOf { it.toInt() }
     println(r)

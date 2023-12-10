@@ -4,7 +4,7 @@ import resourceAsFile
 import toLongList
 
 fun main() {
-    val input = resourceAsFile("y2023/day6-input-test.txt").readLines()
+    val input = resourceAsFile("y2023/day06-input-test.txt").readLines()
 
     val input1 = input.map { it.split(":").last().toLongList() }
     val r1 = input1.first()
